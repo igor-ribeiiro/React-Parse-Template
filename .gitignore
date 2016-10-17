@@ -1,6 +1,16 @@
+# Dependency directory
 node_modules
 
 build
 
+# Logs
+logs
+*.log
+npm-debug.log*
+
 # Jetbrains
 .idea
+
+# Project
+.gitkeep
+
