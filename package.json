@@ -1,0 +1,42 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run vendor && npm run watch",
+    "watch": "watchify -u react -u react-dom -o build/js/bundle.js -v -d js/index.js",
+    "vendor": "browserify -r react -r react-dom > build/js/vendor.js",
+    "build": "npm run build:vendor && npm run build:app",
+    "build:app": "browserify -u react -u react-dom js/index.js | uglifyjs -c warnings=false,drop_console -m > build/js/bundle.js",
+    "build:vendor": "browserify -r react -r react-dom | uglifyjs -c warnings=false,drop_console -m > build/js/vendor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  }
+}
