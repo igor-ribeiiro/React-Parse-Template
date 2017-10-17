@@ -1,5 +1,4 @@
 # react-boilerplate
-react-boilerplate
 
 A boilerplate for react that Me and Samuel Timbo made.
 
