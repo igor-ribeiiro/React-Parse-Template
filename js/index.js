@@ -8,6 +8,4 @@ Parse.initialize("AsyKlwpQNp7FldON8kqEE8iEMz2Yz9JyWZB7EQzF", "1wqF4GABGJLMuLKZFQ
 Parse.serverURL = "https://parseapi.back4app.com/";
 
 
-console.log('App working!');
-
 ReactDOM.render(<App />, document.getElementById('app'));
