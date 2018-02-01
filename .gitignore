@@ -1,5 +1,6 @@
 # Dependency directory
 node_modules
+package-lock.json
 
 build/*
 !build/js/.gitkeep
@@ -11,4 +12,3 @@ npm-debug.log*
 
 # Jetbrains
 .idea
-
