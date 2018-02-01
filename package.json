@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run vendor && npm run watch",
-    "watch": "watchify -u react -u react-dom -o build/js/bundle.js -v -d js/index.js",
-    "vendor": "browserify -r react -r react-dom > build/js/vendor.js",
+    "watch": "watchify -u react -u react-dom -o build/bundle.js -v -d js/index.js",
+    "vendor": "browserify -r react -r react-dom > build/vendor.js",
     "build": "npm run build:vendor && npm run build:app",
-    "build:app": "browserify -u react -u react-dom js/index.js | uglifyjs -c warnings=false,drop_console -m > build/js/bundle.js",
-    "build:vendor": "browserify -r react -r react-dom | uglifyjs -c warnings=false,drop_console -m > build/js/vendor.js"
+    "build:app": "browserify -u react -u react-dom js/index.js | uglifyjs -c warnings=false,drop_console -m > build/bundle.js",
+    "build:vendor": "browserify -r react -r react-dom | uglifyjs -c warnings=false,drop_console -m > build/vendor.js"
   },
   "author": "",
   "license": "ISC",
