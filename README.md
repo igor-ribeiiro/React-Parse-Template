@@ -4,8 +4,8 @@
 
 The project looks like this: [React Quickstart](http://reactquickstart.back4app.io/).
 
-<div markdown="block" style="text-align:center">
-![Image of the Project](/img/example_app.png){:class="img-fluid mt-3 mb-5 rounded shadowed"}
+<div style="text-align:center;">
+   <img src="/img/example_app.png" class="img-fluid mt-3 mb-5 rounded shadowed"/>
 </div>
 
 To start working with it is quite simple: 
