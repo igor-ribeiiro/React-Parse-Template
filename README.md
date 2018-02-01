@@ -2,6 +2,8 @@
 
 ### A template of a React App connect with the Parse API for quick starts.
 
+In this repository you will find an example app with all steps covered at [Back4App's React Quickstart tutorial](https://www.back4app.com/docs/javascript/react).
+
 The project looks like this: [React Quickstart](http://reactquickstart.back4app.io/).
 
 <div style="text-align:center;">
