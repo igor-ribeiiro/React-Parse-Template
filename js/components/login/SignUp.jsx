@@ -51,8 +51,8 @@ class Login extends React.Component {
     render() {
         return (
             <div className="container">
-                <form className="form-signin" onSubmit={this.handleSubmit}>
-                    <h2 className="form-signin-heading">Please sign up</h2>
+                <form className="form-signup" onSubmit={this.handleSubmit}>
+                    <h2 className="form-signup-heading">Please sign up</h2>
                     <input type="text" className="form-control" placeholder="Email address" required
                            autoFocus onChange={this.handleUsernameChange}/>
                     <input type="password" className="form-control" placeholder="Password" required
