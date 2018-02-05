@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Login extends React.Component {
+class SignUp extends React.Component {
     constructor(props) {
         super(props);
 
@@ -35,6 +35,7 @@ class Login extends React.Component {
         user.set("username", this.state.email);
         user.set("email", this.state.email);
         user.set("password", this.state.password);
+        user.set("rememberMe", this.state.rememberMe);
 
         user.signUp(null).then(
             function(user) {
@@ -71,4 +72,4 @@ class Login extends React.Component {
 
 }
 
-export default Login;
+export default SignUp;
